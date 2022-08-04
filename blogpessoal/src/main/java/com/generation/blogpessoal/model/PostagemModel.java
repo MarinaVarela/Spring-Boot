@@ -21,11 +21,11 @@ public class PostagemModel {
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@NotBlank(message = "O atributo título é Obrigatório e não pode utilizar espaços em branco!") 
+	@NotBlank(message = "O atributo título é obrigatório e não pode utilizar espaços em branco!") 
 	@Size(min = 5, max = 100, message = "O atributo título deve conter no mínimo 05 e no máximo 100 caracteres")
 	private String titulo; 
 	
-	@NotNull(message = "O atributo texto é Obrigatório!")
+	@NotNull(message = "O atributo texto é obrigatório!")
 	@Size(min = 10, max = 1000, message = "O atributo texto deve conter no mínimo 10 e no máximo 500 caracteres")
 	private String texto;
 	
