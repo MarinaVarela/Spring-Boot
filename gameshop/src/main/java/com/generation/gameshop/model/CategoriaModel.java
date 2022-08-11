@@ -20,8 +20,6 @@ public class CategoriaModel {
 	@Size(min = 3, max = 15)
 	private String categoria;
 
-	//private List<CategoriaModel> categoriaModel;
-
 	public Long getId() {
 		return id;
 	}
@@ -37,13 +35,4 @@ public class CategoriaModel {
 	public void setCategoria(String categoria) {
 		this.categoria = categoria;
 	}
-/*
-	public List<CategoriaModel> getCategoriaModel() {
-		return categoriaModel;
-	}
-
-	public void setCategoriaModel(List<CategoriaModel> categoriaModel) {
-		this.categoriaModel = categoriaModel;
-	}
-*/
 }
